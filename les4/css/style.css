@@ -1,0 +1,43 @@
+#btn {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    width: 500px;
+    height: 25vh;
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.user-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.user-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.user-info {
+    text-align: center;
+    width: 60%;
+}
+
+.user-info div span {
+    margin-right: 10px;
+}
