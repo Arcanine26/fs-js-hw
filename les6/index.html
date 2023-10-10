@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6 - "Human"</title>
+</head>
+<body>
+    <script>
+        function Human (h_name, h_surname, h_age, h_number, h_email){
+            this.name = h_name;
+            this.surname = h_surname;
+            this.age = h_age;
+            this.number = h_number;
+            this.email = h_email;
+        }
+
+        const student1 = new Human ("Olga", "Ivanova", 18, "380661231212", "olga.iv@gmail.com")
+        const student2 = new Human ("Vasilii", "Vasiliev", 21, "380739879898", "v.vas21@gmail.com")
+        const student3 = new Human ("Andrei", "Andreev", 20, "380934325656", "andr.andr@gmail.com")
+        const student4 = new Human ("Ivan", "Ivanov", 18, "380951231231", "ivan.iv@gmail.com")
+        const student5 = new Human ("Oleg", "Bogatirev", 20, "380935213212", "oleg2003@gmail.com")
+
+        let e_people = [student1, student2, student3, student4, student5];
+
+        e_people.sort(function(x,y){
+            return x.age - y.age;
+        })
+        for (let i = 0; i < e_people.length; i++) {
+        document.write(`Name : ${e_people[i].name} | Surname : ${e_people[i].surname} | Age : ${e_people[i].age} | Number : ${e_people[i].number} | Email : ${e_people[i].email}<br />`);
+        }
+        console.log(e_people);
+        let dates = new Date ();
+        document.write(`University time : ${dates} `)
+        
+    </script>
+</body>
+</html>
