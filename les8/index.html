@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Работа с узлами DOM</title>
+    <style>
+        .select {
+            color: tomato;
+        }
+
+        input {
+            width: 200px;
+            padding: .5rem;
+            margin-bottom: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+    <br />
+    <input type="button" id="firstElementChild" value="Выбрать первый элемент" /><br />
+    <input type="button" id="lastElementChild" value="Выбрать последний элемент" /><br />
+    <input type="button" id="nextSibling" value="Выбрать следующий элемент" /><br />
+    <input type="button" id="previousSibling" value="Выбрать предыдущий элемент" /><br />
+    <input type="button" id="addToEnd" value="Добавить элемент у кінець" /><br />
+    <input type="button" id="removeFromBegin" value="Удалить элемент з початку" /><br />
+    <input type="button" id="removeFromEnd" value="Удалить элемент з кінця" /><br />
+    <input type="button" id="removeFromMid" value="Удалить элемент з середини" /><br />
+    <input type="button" id="addToBegin" value="Добавить  в начало" /><br />
+
+    <script src="js/dom.js"></script>
+</body>
+
+</html>
